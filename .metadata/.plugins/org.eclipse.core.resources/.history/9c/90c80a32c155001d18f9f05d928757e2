@@ -1,0 +1,58 @@
+package arra;
+
+import java.util.Scanner;
+
+public class arra {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter two strings of  anagrams");
+		System.out.println("enter String Str1:");
+		String str1 = scanner.next();
+		System.out.println("enter String Str2:");
+		String str2 = scanner.next();
+		try {
+		
+			int str=str1.length();
+			int st=str2.length();
+
+			System.out.println("In the string: " + str);  
+			System.out.println("In the string: " + st);  
+			
+	
+			int no = str - st;
+			boolean  h=true;
+System.out.println("str1 and str 2 are Anagrams"+no);
+		
+		}catch(Exception e) {
+			System.out.println("there not anagrams");
+		}
+	}
+}
+
+
+
+
+
+
+//
+//	String str = " Welcome To JavaTpoint ";  
+//	int sizeWithWhiteSpaces = str.length();  
+//	  
+//	System.out.println("In the string: " + str);  
+//	  
+//	str = str.replace(" ", "");  
+//	int sizeWithoutWhiteSpaces = str.length();  
+//	  
+//	// calculating the white spaces  
+//	int noOfWhieSpaces = sizeWithWhiteSpaces - sizeWithoutWhiteSpaces;  
+//	  
+//	System.out.print("Total number of whitespaces present are: " + noOfWhieSpaces);  
+//	}  
+//
+//}
+
+//String s1="";  
+//String s2="";  
+//System.out.println("string length is: "+s1.length());  
+//System.out.println("string length is: "+s2.length());
+

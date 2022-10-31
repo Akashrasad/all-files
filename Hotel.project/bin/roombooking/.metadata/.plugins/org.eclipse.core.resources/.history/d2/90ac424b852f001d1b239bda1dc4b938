@@ -1,0 +1,23 @@
+package people.tech;
+
+import java.util.Scanner;
+
+public class Firstday {
+
+	public  void main()
+	{
+		String a,b;
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		a=sc.next();
+		b=sc.next();
+		int c,d;
+		c=Integer.parseInt(a);
+		d=Integer.parseInt(b);
+		System.out.println(a+b);
+		System.out.println(c+d);
+		
+
+	}
+
+}

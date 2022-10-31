@@ -1,0 +1,67 @@
+package com.java.employee;
+
+import java.util.*;
+
+class Employee {
+	private int empno;
+	private String ename;
+	private int salary;
+
+	Employee(int empno, String ename, int salary) {
+		this.empno = empno;
+		this.ename = ename;
+		this.salary = salary;
+
+	}
+
+	public int getempno() {
+		return empno;
+	}
+
+	public String getename() {
+		return ename;
+	}
+
+	public int getsalary() {
+		return salary;
+	}
+
+	public String toString() {
+		return empno + " " + ename + " " + salary;
+	}
+}
+
+public class CRUDDemo {
+	public static void main(String[] args) {
+		Collection<Employee> c = new ArrayList<Employee>();
+		Scanner scanner = new Scanner(System.in);
+		int ch;
+		do {
+			System.out.println("1.insert ");
+			System.out.println("2.display");
+			System.out.println("3.search");
+			System.out.println("4.delete");
+			System.out.println("5.update");
+			System.out.println("Enter your choice: ");
+			ch = scanner.nextInt();
+			switch (ch) {
+			case 1:
+				System.out.println("enter empno :");
+				int eno = scanner.nextInt();
+				System.out.println("enter empname: ");
+				String ename = scanner.nextLine();
+				System.out.println("enetr salary: ");
+				int salary = scanner.nextInt();
+
+				c.add(new Employee(eno, ename, salary));
+				break;
+			case 2:
+				System.out.println(c);
+				break;
+
+			}
+		} while (ch != 0);
+
+	}
+
+}

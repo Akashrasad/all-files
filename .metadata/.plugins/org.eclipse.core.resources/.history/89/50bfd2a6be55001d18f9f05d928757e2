@@ -1,0 +1,22 @@
+package arra;
+
+import java.util.Scanner;
+
+public class arra {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		String str1 = scanner.next();
+		String str2 = scanner.next();
+		try {
+			int str=str1.length();
+			int st=str2.length();
+			
+			System.out.println("there are anagars:"+);
+			
+		} catch (Exception e) {
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package roombooking;
+import java.util.Scanner;
+
+public class Room2 {
+
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Select a City Name ");
+		System.out.println("1.Mumbai");
+		System.out.println("2.Ooty");
+		System.out.println("3.Hyderabad");
+		String location=sc.next();
+		
+
+	}
+
+}

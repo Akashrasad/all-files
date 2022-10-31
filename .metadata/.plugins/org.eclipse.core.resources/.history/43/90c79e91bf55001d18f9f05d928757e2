@@ -1,0 +1,35 @@
+package arra;
+
+import java.util.Scanner;
+
+public class arra {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		String str1 = scanner.next();
+		String str2 = scanner.next();
+		try {
+			int str=str1.length();
+			int st=str2.length();
+//			if( str==st) {
+//				System.out.println(str);
+//				System.out.println(st);
+//				
+//			}
+			
+			System.out.println("there are anagars:"+str);
+			
+		} catch (Exception e) {
+			System.out.println();
+			
+		}
+		
+	}
+}
+
+
+
+//String s1="";  
+//String s2="";  
+//System.out.println("string length is: "+s1.length());  
+//System.out.println("string length is: "+s2.length());
+

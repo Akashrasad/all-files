@@ -1,0 +1,19 @@
+package roombooking;
+
+public class Interface implements interface
+{
+	class student{
+	System.out.println("name of the student");
+	}
+	class Rollno{
+		System.out.println(" roll number");
+	}
+    class dresscode{
+    	System.out.println("Dress code for student")
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

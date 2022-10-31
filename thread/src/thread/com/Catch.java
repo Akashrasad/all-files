@@ -1,0 +1,49 @@
+package thread.com;
+
+import java.text.DecimalFormat;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class Catch {
+	public static void main(String[] args) {
+		Scanner menuInput=new Scanner(System.in);
+		DecimalFormat moneyformat=new DecimalFormat("'Rs'###,##0.00");
+		HashMap<Integer, Integer> data=new HashMap<Integer,Integer>();
+		int CustomerNumber;
+		int PinNumber;
+		int x=1;
+		do {
+			try {
+				data.put(9876543, 9876);
+				data.put(8989898, 1890);
+				System.out.println("welcome to the ATM!");
+				System.out.println("enter you customer number:");
+				setCustomerNumber(menuInput.nextInt());
+				System.out.println("enter your pin number");
+				setPinNumber(menuInput.nextInt());
+				
+				//System.out.println("in");
+				//break;
+			} catch (Exception e) {
+				System.out.println("out");
+				x=2;
+			}
+			
+		} while (x==1);
+		{
+			System.out.println("in do wile lopp");
+		}
+	}
+
+	private static void setCustomerNumber(int nextInt) {
+		// TODO Auto-generated method stub
+		//System.out.println("hi");
+		
+	}
+
+	private static void setPinNumber(int nextInt) {
+		// TODO Auto-generated method stub
+		//System.out.println("hello");
+	}
+
+}

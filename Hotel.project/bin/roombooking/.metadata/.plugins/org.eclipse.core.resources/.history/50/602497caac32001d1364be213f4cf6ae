@@ -1,0 +1,12 @@
+package roombooking;
+
+public  Face Interface3
+{
+	public void school();
+	
+	public void Area();
+	
+	public void location();
+	
+	
+	}

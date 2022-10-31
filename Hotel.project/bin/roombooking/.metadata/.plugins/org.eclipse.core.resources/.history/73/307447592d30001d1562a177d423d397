@@ -1,0 +1,53 @@
+package people.tech.two;
+
+import java.util.Scanner;
+
+public class Hotel {
+	public static void main(String[] args) {
+        System.out.println("welcome to Shimla");
+        System.out.println("welcome to Hotel1");
+        System.out.println("Please Select 1 for Non Ac room");
+        System.out.println("Please Select 2 For A/c Room");
+
+        Scanner sc = new Scanner(System.in);
+        Hotel1 h1 = new Hotel1();
+        System.out.println("1 is For Non Ac Room ");
+
+        int one= sc.nextInt();
+        System.out.println("2 is for A/c Room");
+        int two= sc.nextInt();
+        if (one==1) {
+            h1.TypeofRoom(one);
+        } else  {
+            h1.TypeofRoom(one,two);
+
+        }
+        System.out.println("Enter Child name");
+        String ChildName = sc.next();
+        System.out.println("Enter Child Age");
+        int Childage = sc.nextInt();
+        System.out.println("Enter Adult name");
+        String AdultName = sc.next();
+        System.out.println("Enter Adult Age");
+        int AdultAge = sc.nextInt();
+        System.out.println("enter Adult2 name");
+        String AdultAge2=sc.next();
+        System.out.println("enter Adult Age 2");
+        int AdultAge2e= sc.nextInt();
+        if (Childage > 10) {
+            h1.Child();
+
+        } else if (Childage<=10) {
+            h1.Child(ChildName,Childage);
+            
+        } else if (AdultAge>10) {
+            h1.Adullt(AdultName,AdultAge);
+            
+        } else if (AdultAge2e>10) {
+            h1.Adullt(AdultName,AdultAge,AdultName,AdultAge);
+            
+        }
+    }
+
+
+}

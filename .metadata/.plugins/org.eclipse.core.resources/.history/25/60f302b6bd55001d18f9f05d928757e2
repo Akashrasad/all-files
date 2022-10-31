@@ -1,0 +1,16 @@
+package arra;
+
+import java.util.Scanner;
+
+public class arra {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		String str1 = scanner.next();
+		String str2 = scanner.next();
+		int choice;
+		do {
+			
+		} while (choice!=0);
+	}
+
+}

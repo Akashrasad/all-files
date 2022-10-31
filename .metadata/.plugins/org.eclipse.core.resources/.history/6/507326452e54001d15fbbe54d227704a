@@ -1,0 +1,21 @@
+package thread.com;
+
+public class Catch {
+	public static void main(String[] args) {
+		int x=1;
+		do {
+			try {
+				//System.out.println("in");
+				break;
+			} catch (Exception e) {
+				System.out.println("out");
+				x=2;
+			}
+			
+		} while (x==1);
+		{
+			System.out.println("in do wile lopp");
+		}
+	}
+
+}
